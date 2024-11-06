@@ -41,6 +41,15 @@ de `Read repository ...` para `Read and write permissions` e Salvar
 
 incluir arquivo `.github/workflows/release.yml`
 
+incluir o script
+
+```json
+...
+"scripts": {
+    ...
+    "release": "electron-builder --publish always"
+```
+
 ```cmd
 git tag v0.0.1
 git push
