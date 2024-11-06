@@ -40,3 +40,9 @@ alterar a repositório em: Settings > Actions > General > Workflow permissions
 de `Read repository ...` para `Read and write permissions` e Salvar
 
 incluir arquivo `.github/workflows/release.yml`
+
+```cmd
+git tag v0.0.1
+git push
+git push --tags
+```
