@@ -37,3 +37,8 @@ jobs:
         with:
           github_token: ${{ secrets.github_token }}
           release: true
+      - name: Copy win-unpacked folder
+        if: startsWith(matrix.os, 'windows-latest')
+        run: |
+          mkdir -p build/win-unpacked
+          cp -r dist/win-unpacked/* build/win-unpacked/
