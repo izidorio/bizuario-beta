@@ -32,3 +32,11 @@ $ npm run build:mac
 # For Linux
 $ npm run build:linux
 ```
+
+### Git actions
+
+alterar a repositório em: Settings > Actions > General > Workflow permissions
+
+de `Read repository ...` para `Read and write permissions` e Salvar
+
+incluir arquivo `.github/workflows/release.yml`
