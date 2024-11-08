@@ -49,6 +49,12 @@ incluir o script
     "release": "electron-builder --publish always"
 ```
 
+atualize a versão do atual do projeto em `package.json`
+
+```json
+"version": "0.0.1"
+```
+
 rodar o script
 
 ```cmd

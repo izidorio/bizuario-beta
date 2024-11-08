@@ -43,11 +43,11 @@ jobs:
         run: |
           mkdir -p build/win-unpacked
           cp -r dist/win-unpacked/* build/win-unpacked/
-          tar -czvf win-unpacked.tar.gz -C build win-unpacked
+          powershell Compress-Archive -Path build/win-unpacked/* -DestinationPath win-unpacked.zi
 
       - name: Upload win-unpacked artifact
         if: startsWith(matrix.os, 'windows-latest')
         uses: actions/upload-artifact@v3
         with:
           name: win-unpacked
-          path: win-unpacked.tar.gz
+          path: win-unpacked.zip
